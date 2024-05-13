@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Button, Container, Input, List, ListItem, Text, VStack, IconButton, useToast, Flex } from '@chakra-ui/react';
+import { Flex, Text, IconButton, Input, List, ListItem, Container, VStack, useToast } from '@chakra-ui/react';
 import { FaTrash, FaEdit, FaSave, FaPlus } from 'react-icons/fa';
 
 const Index = () => {
@@ -48,7 +48,7 @@ const Index = () => {
         <Text fontSize="2xl" fontWeight="bold">Todo App</Text>
         <Box display="flex" w="100%">
           <Input placeholder="Add a new task" value={input} onChange={(e) => setInput(e.target.value)} />
-          <IconButton icon={<FaPlus />} onClick={addTask} colorScheme="blue" aria-label="Add task" ml={2} />
+          <IconButton icon={<FaPlus />} onClick={addTask} colorScheme="green" aria-label="Add task" ml={2} />
         </Box>
         <List w="100%">
           {tasks.map(task => (
