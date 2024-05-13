@@ -48,7 +48,7 @@ const Index = () => {
         <Text fontSize="2xl" fontWeight="bold">Todo App</Text>
         <Box display="flex" w="100%">
           <Input placeholder="Add a new task" value={input} onChange={(e) => setInput(e.target.value)} />
-          <IconButton icon={<FaPlus />} onClick={addTask} colorScheme="blue" aria-label="Add task" ml={2} />
+          <IconButton icon={<FaPlus />} onClick={addTask} colorScheme="green" aria-label="Add task" ml={2} />
         </Box>
         <List w="100%">
           {tasks.map(task => (
